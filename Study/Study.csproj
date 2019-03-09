@@ -44,9 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
+    <Compile Include="ILikeTo.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="OOProgrammer.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Programmer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeScriptProgrammer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
