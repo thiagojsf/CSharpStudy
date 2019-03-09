@@ -23,6 +23,8 @@ namespace Study
         #region Properties
         public string Name;
         protected DateTime Birthday;
+        public Address PersonalAddress;
+        Vehicle Vehicle;
         public int Age
         {
             get

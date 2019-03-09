@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Study
 {
-    public abstract class OOProgrammer : Programmer
+    class MacBook : Computer
     {
-        public OOProgrammer()
+        public MacBook()
         {
-            AddDefaultLanguage();
+            DefineGHz();
         }
-
-        public abstract void AddDefaultLanguage();
-
     }
 }

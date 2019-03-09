@@ -32,6 +32,12 @@ namespace Study
 
         static void Main(string[] args)
         {
+            Computer computer = new Computer();
+            computer.CPU = "i7";
+
+            OOProgrammer oo = new TypeScriptProgrammer();
+            OOProgrammer oo2 = new OOProgrammer();
+
         }
     }
 }
