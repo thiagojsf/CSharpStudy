@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AngularProgrammer.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ILikeTo.cs" />
+    <Compile Include="IWebDeveloper.cs" />
+    <Compile Include="JavaScriptDeveloper.cs" />
     <Compile Include="Language.cs" />
+    <Compile Include="NodeDeveloper.cs" />
     <Compile Include="OOProgrammer.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -55,6 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Students\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

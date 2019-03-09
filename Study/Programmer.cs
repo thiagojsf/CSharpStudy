@@ -22,5 +22,11 @@ namespace Study
         {
             return I_LIKE;
         }
+
+        public virtual string GetPreferedIDE()
+        {
+            return "Notepad";
+        }
+
     }
 }

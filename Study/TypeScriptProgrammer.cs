@@ -8,6 +8,7 @@ namespace Study
 {
     public class TypeScriptProgrammer : OOProgrammer
     {
+
         public override void AddDefaultLanguage()
         {
             Languages.Add(new Language()
@@ -16,6 +17,11 @@ namespace Study
                 IsOO = true,
                 Name = "TypeScript"
             });
+        }
+
+        public override string GetPreferedIDE()
+        {
+            return "Visual Code";
         }
     }
 }
