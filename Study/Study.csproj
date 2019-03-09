@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AngularProgrammer.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="ILikeTo.cs" />
     <Compile Include="IWebDeveloper.cs" />
     <Compile Include="JavaScriptDeveloper.cs" />
