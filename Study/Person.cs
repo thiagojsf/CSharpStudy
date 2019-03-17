@@ -8,6 +8,9 @@ namespace Study
 {
     public class Person
     {
+
+
+
         #region Internal classes and structs
         public struct Address
         {
@@ -36,7 +39,38 @@ namespace Study
 
                 return age;
             }
+            set
+            {
+                this.Birthday = DateTime.Today.AddYears(value);
+            }
         }
+        public int CoffeeCupsPerDay { get; set; }
         #endregion
+
+        public int CalculateAge()
+        {
+            this.Birthday = DateTime.Now;
+            return this.Age;
+        }
+
+        public static int CalculateAge(Person person)
+        {
+            person.Birthday = DateTime.Now;
+            return person.Age;
+        }
+
+        public static Person GetPersonWith20YearsOld()
+        {
+            return new Person
+            {
+                Birthday = new DateTime(1999, 3, 16)
+            };
+        }
+
+        public void SetPersonWith20YearsOld()
+        {
+            this.Birthday = new DateTime(1999, 3, 16);
+        }
+
     }
 }

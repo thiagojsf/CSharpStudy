@@ -13,5 +13,6 @@ namespace Study.Students
             Name = "Thiago";
             Birthday = new DateTime(1994, 5, 13);
         }
+
     }
 }
