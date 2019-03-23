@@ -52,6 +52,7 @@
     <Compile Include="Computer.cs" />
     <Compile Include="CPlusPlusProgrammer.cs" />
     <Compile Include="CSharpProgrammer.cs" />
+    <Compile Include="DatabaseDeveloperAttribute.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="ILikeTo.cs" />

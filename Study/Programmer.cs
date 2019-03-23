@@ -28,5 +28,22 @@ namespace Study
             return "Notepad";
         }
 
+        public static void GetAttribute(Type t)
+        {
+            // Get instance of the attribute.
+            DatabaseDeveloperAttribute MyAttribute =
+                (DatabaseDeveloperAttribute)Attribute.GetCustomAttribute(t, typeof(DatabaseDeveloperAttribute));
+
+            if (MyAttribute == null)
+            {
+                Console.WriteLine("The attribute was not found.");
+            }
+            else
+            {
+                string query = MyAttribute.GetQueryForTenFirstRecords();
+                Console.WriteLine("Query for get the 10 first records:" + query);
+            }
+        }
+
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Study
 {
+    [DatabaseDeveloper(DatabaseDeveloperAttribute.MostlyUserDatabases.Oracle)]
     public class JavaProgrammer : OOProgrammer
     {
         public override void AddDefaultLanguage()

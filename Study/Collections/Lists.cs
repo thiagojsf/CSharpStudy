@@ -10,11 +10,32 @@ namespace Study.Collections
     {
         List<int> ListaInteiros;
         //List<T> ListaIndefinida;
-        List<object> ListaObjetos;
+        List<string> ListaObjetos;
 
         public Lists()
         {
-            var listaInteiros = new List<int>();
+            var listaInteiros = new List<char>();
+            //listaInteiros.Add(800);
+            listaInteiros.Add('T');
+            //listaInteiros.RemoveAt(0);
+            var listaDeErres = listaInteiros.Where(y => y == 'R');
+
+            if (listaInteiros.Count() > 0)
+            {
+                return;
+            }
+            else 
+                if (listaInteiros.Count() > 3)
+                {
+                    listaInteiros.Add('Y');
+                    listaInteiros.Add('Z');
+                }
+                else
+                {
+
+                }
+            
+            
 
             var lista = new List<OOProgrammer>
             {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Study
 {
+    [DatabaseDeveloper(DatabaseDeveloperAttribute.MostlyUserDatabases.MSSQLServer)]
     public class CSharpProgrammer : OOProgrammer
     {
         public override void AddDefaultLanguage()

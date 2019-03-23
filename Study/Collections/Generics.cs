@@ -30,7 +30,7 @@ namespace Study.Collections
 
         public void PrintList()
         {
-            
+            /*
             Print(1);
             Print("Hello world!");
             Print(false);
@@ -41,6 +41,7 @@ namespace Study.Collections
             PrintStruct(1);
             PrintStruct("Hello world!");
             PrintStruct(false);
+            */
             
         }
     }
