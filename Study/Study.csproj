@@ -69,6 +69,7 @@
     <Compile Include="Programmer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringInterna.cs" />
+    <Compile Include="Students\IgorAfonso.cs" />
     <Compile Include="Students\ThiagoJordan.cs" />
     <Compile Include="Students\LucasBlasifera.cs" />
     <Compile Include="TypeScriptProgrammer.cs" />
