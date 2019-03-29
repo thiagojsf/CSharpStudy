@@ -7,5 +7,13 @@ namespace Automotivo
     [Aluno("Igor")]
     class Banco
     {
+        #region Propriedades
+
+        internal string EstofadoDosBancos;
+        internal bool RegulagadorDeAltura;
+        internal bool RegulagadorDeEncosto;
+        internal string Cor;
+
+        #endregion
     }
 }
