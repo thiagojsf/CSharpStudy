@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4A7B875-2FBD-4ECD-BA7C-93076029FD44}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Study</RootNamespace>
-    <AssemblyName>Study</AssemblyName>
+    <ProjectGuid>{2CD1525C-01B8-46DE-BF81-DFAC3D53B6B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomotivoFramework</RootNamespace>
+    <AssemblyName>AutomotivoFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,9 +40,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,55 +48,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AngularProgrammer.cs" />
-    <Compile Include="Collections\Arrays.cs" />
-    <Compile Include="Collections\DIctionaries.cs" />
-    <Compile Include="Collections\Generics.cs" />
-    <Compile Include="Collections\IEnumerables.cs" />
-    <Compile Include="Collections\Lists.cs" />
-    <Compile Include="Computer.cs" />
-    <Compile Include="CPlusPlusProgrammer.cs" />
-    <Compile Include="CSharpProgrammer.cs" />
-    <Compile Include="DatabaseDeveloperAttribute.cs" />
-    <Compile Include="Employee.cs" />
+    <Compile Include="DbMap.cs" />
     <Compile Include="Exemplos.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="ILikeTo.cs" />
-    <Compile Include="ImpostoPIS.cs" />
-    <Compile Include="IWebDeveloper.cs" />
-    <Compile Include="JavaProgrammer.cs" />
-    <Compile Include="JavaScriptDeveloper.cs" />
-    <Compile Include="Language.cs" />
-    <Compile Include="MacBook.cs" />
-    <Compile Include="NodeDeveloper.cs" />
-    <Compile Include="OOProgrammer.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Programmer.cs" />
+    <Compile Include="Migrations\201903300201400_Mgr1.cs" />
+    <Compile Include="Migrations\201903300201400_Mgr1.Designer.cs">
+      <DependentUpon>201903300201400_Mgr1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300229225_Mgr2.cs" />
+    <Compile Include="Migrations\201903300229225_Mgr2.Designer.cs">
+      <DependentUpon>201903300229225_Mgr2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300233485_Mgr3.cs" />
+    <Compile Include="Migrations\201903300233485_Mgr3.Designer.cs">
+      <DependentUpon>201903300233485_Mgr3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringInterna.cs" />
-    <Compile Include="Students\ThiagoJordan.cs" />
-    <Compile Include="Students\LucasBlasifera.cs" />
-    <Compile Include="TypeScriptProgrammer.cs" />
-    <Compile Include="Vehicle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automotivo\Automotivo.csproj">
+      <Project>{ab441147-f743-4462-9b17-b28aa25f3ecd}</Project>
+      <Name>Automotivo</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutomotivoFramework\AutomotivoFramework.csproj">
-      <Project>{2cd1525c-01b8-46de-bf81-dfac3d53b6b6}</Project>
-      <Name>AutomotivoFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Automotivo\Automotivo.csproj">
-      <Project>{ab441147-f743-4462-9b17-b28aa25f3ecd}</Project>
-      <Name>Automotivo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{a11818c3-c067-4d3a-813b-4a210bd93d13}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Migrations\201903300201400_Mgr1.resx">
+      <DependentUpon>201903300201400_Mgr1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300229225_Mgr2.resx">
+      <DependentUpon>201903300229225_Mgr2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300233485_Mgr3.resx">
+      <DependentUpon>201903300233485_Mgr3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
